@@ -20,9 +20,11 @@ function addTask(){
 listContainer.addEventListener("click", function (e){
     if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked"); // Add or remove "checked" class on the clicked list item
+    // saveData();
     }
     else if (e.target.tagName === "SPAN"){
         e.target.parentElement.remove(); // Remove the parent list item of the clicked span
+    // saveData();
     }
 }, false);
 
